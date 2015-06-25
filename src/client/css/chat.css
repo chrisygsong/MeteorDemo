@@ -1,0 +1,5 @@
+.chat-list .username {font-weight: bold;}
+.chat-list .content {color: blue;}
+.chat-list .createAt {font-size: 0.7em;}
+
+.message-box {margin-top: 20px;}

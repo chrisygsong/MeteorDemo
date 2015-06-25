@@ -1,0 +1,21 @@
+<!--
+  author : SungYong Jang <jsy@adain.kr>
+  date : 2015-06-22
+  description : chat template
+-->
+<template name="chat">
+  <h1>채팅룸</h1>
+  <div class="chat-list">
+    {{#each list}}
+    <li>
+      <span class="username">[ {{username}} ]</span>
+      <span class="content">{{content}}</span>
+      <span class="createAt">{{createdAt}}</span>
+    </li>
+    {{/each}}
+  </div>
+
+  <div class="message-box">
+    {{currentUser}} <input type="text" id="content" placeholder="메시지 입력 후 엔터." />
+  </div>
+</template>
